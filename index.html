@@ -354,19 +354,22 @@
                 </div>
                 <div class="row">
                     <div class="contact-form">
-                        <form>
+                        <form method="post" action="https://formsubmit.co/8d95b683c1db29374d0485632f5ece29">
                             <div class="row">
                                 <div class="input-group">
-                                    <input type="text" placeholder="Name" class="input-control" required>
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                                    <input name="nombre" type="text" placeholder="Name" class="input-control" required>
                                 </div>
                                 <div class="input-group">
-                                    <input type="text" placeholder="Email" class="input-control" required>
+                                    <input name="email" type="email" placeholder="Email" class="input-control" required>
                                 </div>
                                 <div class="input-group">
-                                    <input type="text" placeholder="Topic" class="input-control" required>
+                                    <input name="topic" type="text" placeholder="Topic" class="input-control" required>
                                 </div>
                                 <div class="input-group">
-                                    <textarea placeholder="Message" class="input-control" required></textarea>
+                                    <textarea name="message" placeholder="Message" class="input-control"
+                                        required></textarea>
                                 </div>
                                 <div class="submit-btn">
                                     <button type="submit" class="btn">Send Message</button>
